@@ -45,10 +45,10 @@
                           class="fa-solid fa-xmark"></i>
                         h</p>
                       <div class="py-3">
-                        <input class="w-25" type="text" placeholder="b"><samp class="px-1">cm</samp>
-                        <input class="w-25" type="text" placeholder="h"><span class="px-1">cm</span>
+                        <input id="tri-base" class="w-25" type="text" placeholder="b"><samp class="px-1">cm</samp>
+                        <input id="tri-height" class="w-25" type="text" placeholder="h"><span class="px-1">cm</span>
                       </div>
-                      <button class="btn btn-primary w-100">Calculate</button>
+                      <button id="tri-calculate" class="btn btn-primary w-100">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -63,10 +63,10 @@
                       <h1>Rectangle</h1>
                       <p class="m-0">Area (A) = w <i class="fa-solid fa-xmark"></i> l</p>
                       <div class="py-3">
-                        <input class="w-25" type="text" placeholder="w"><samp class="px-1">cm</samp>
-                        <input class="w-25" type="text" placeholder="l"><span class="px-1">cm</span>
+                        <input id="rectangle-width" class="w-25" type="text" placeholder="w"><samp class="px-1">cm</samp>
+                        <input id="rectangle-length" class="w-25" type="text" placeholder="l"><span class="px-1">cm</span>
                       </div>
-                      <button class="btn btn-primary w-100">Calculate</button>
+                      <button id="rectangle-calculate" class="btn btn-primary w-100">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -176,114 +176,3 @@
 </body>
 
 </html>
-
-
-<!-- <div class="col-4 pb-3">
-  <div class="card text-center" style="width: 18rem;">
-    <div class="card-body">
-      <div class=" w-75 m-auto">
-        <img src="images/triangle.png" alt="" class="w-75">
-      </div>
-      <div class="card-text">
-        <h1>Triangle</h1>
-      <p class="m-0">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
-      <div class="py-3">
-        <input class="w-25" type="text" placeholder="b"><samp class="px-1">cm</samp>
-        <input class="w-25" type="text" placeholder="h"><span class="px-1">cm</span>
-      </div>
-      <button class="btn btn-primary w-100">Calculate</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col-4 pb-3">
-  <div class="card text-center" style="width: 18rem;">
-    <div class="card-body">
-      <div>
-        <img src="images/rectangle.png" alt="" class="w-75 px-3 py-3">
-      </div>
-      <div class="card-text">
-        <h1>Rectangle</h1>
-      <p class="m-0">Area (A) = w <i class="fa-solid fa-xmark"></i> l</p>
-      <div class="py-3">
-        <input class="w-25" type="text" placeholder="w"><samp class="px-1">cm</samp>
-        <input class="w-25" type="text" placeholder="l"><span class="px-1">cm</span>
-      </div>
-      <button class="btn btn-primary w-100">Calculate</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col-4 pb-3">
-  <div class="card text-center" style="width: 18rem;">
-    <div class="card-body">
-      <div>
-        <img src="images/parallelogram.png" alt="" class="img-fluid px-3 py-3">
-      </div>
-      <div class="card-text">
-        <h1>Parallelogram</h1>
-        <p class="m-0">Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
-        <div class="py-3">
-          <input class="w-25" type="text" placeholder="b "><samp class="px-1">cm</samp>
-          <input class="w-25" type="text" placeholder="h"><span class="px-1">cm</span>
-        </div>
-        <button class="btn btn-primary w-100">Calculate</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col-4">
-  <div class="card text-center" style="width: 18rem;">
-    <div class="card-body">
-      <div>
-        <img src="images/rhombus.png" alt="" class="img-fluid px-3 py-3">
-      </div>
-      <div class="card-text">
-        <h1>Rhombus</h1>
-      <p class="m-0">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i> d<sub>2</sub></p>
-      <div class="py-3">
-        <input class="w-25" type="text" placeholder="d"><samp class="px-1">cm</samp>
-        <input class="w-25" type="text" placeholder="d"><span class="px-1">cm</span>
-      </div>
-      <button class="btn btn-primary w-100">Calculate</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col-4">
-  <div class="card text-center" style="width: 18rem;">
-    <div class="card-body">
-      <div>
-        <img src="images/pentagon.png" alt="" class="img-fluid px-3 py-3">
-      </div>
-      <h1>Pentagon</h1>
-      <p class="m-0">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
-      <div class="py-3">
-        <input class="w-25" type="text" placeholder="p"><samp class="px-1">cm</samp>
-        <input class="w-25" type="text" placeholder="b"><span class="px-1">cm</span>
-      </div>
-      <button class="btn btn-primary w-100">Calculate</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-4">
-  <div class="card text-center" style="width: 18rem;">
-    <div class="card-body">
-      <div>
-        <img src="images/ellipse.png" alt="" class="img-fluid px-3 py-3">
-      </div>
-      <h1>Pentagon                   </h1>
-      <p class="m-0">Area (A) = Πab</p>
-      <div class="py-3">
-        <input class="w-25" type="text" placeholder="b"><samp class="px-1">cm</samp>
-        <input class="w-25" type="text" placeholder="h"><span class="px-1">cm</span>
-      </div>
-      <button class="btn btn-primary w-100">Calculate</button>
-    </div>
-  </div>
-</div> -->
