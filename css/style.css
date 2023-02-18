@@ -1,0 +1,17 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+/* navbar part start */
+.nav-part{
+    background-color: 
+    rgba(16, 144, 216, 0.1);
+}
+/* navbar part end */
