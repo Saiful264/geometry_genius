@@ -1,17 +1,28 @@
-*{
-    font-family: 'Inter', sans-serif;
+* {
+  font-family: "Inter", sans-serif;
 }
-h1{
-    font-size: 25px;
-    font-weight: 700;
+h1 {
+  font-size: 25px;
+  font-weight: 700;
 }
-p{
-    font-size: 16px;
-    font-weight: 400;
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+button {
+  font-weight: 700;
+  font-size: 20px;
 }
 /* navbar part start */
-.nav-part{
-    background-color: 
-    rgba(16, 144, 216, 0.1);
+.nav-part {
+  background-color: rgba(16, 144, 216, 0.1);
+}
+.nav-title{
+  font-size: 45px;
+  font-weight: 700;
+}
+.nav-text{
+  font-size: 30px;
+  font-weight: 500;
 }
 /* navbar part end */
