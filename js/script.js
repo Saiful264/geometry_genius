@@ -53,9 +53,7 @@ function rectangleArea(w, l) {
   return rectangleArea;
 }
 
-document
-  .getElementById("rectangle-calculate")
-  .addEventListener("click", function () {
+document.getElementById("rectangle-calculate").addEventListener("click", function () {
     const w = getInputValue("rectangle-width");
     const l = getInputValue("rectangle-length");
 
@@ -77,9 +75,7 @@ function parallelogramArea(b, h) {
   return parallelogramArea;
 }
 
-document
-  .getElementById("parallelogram-calculate")
-  .addEventListener("click", function () {
+document.getElementById("parallelogram-calculate").addEventListener("click", function () {
     const b = getInputValue("paran-base");
     const h = getInputValue("paran-height");
 
@@ -94,18 +90,13 @@ document
     }
   });
 
-function rhombusArea(d1, d2) {
-  console.log(rhombusArea);
-  return rhombusArea;
-}
-document
-  .getElementById("rhombus-calculate")
-  .addEventListener("click", function () {
+// Rhombus Aera code
+document.getElementById("rhombus-calculate").addEventListener("click", function () {
     const d1 = getInputValue("diagonal-1");
     const d2 = getInputValue("diagonal-2");
 
     // validation code
-    if (isNaN(b, h) || b <= 0 || h <= 0 || isNaN(b) || isNaN(h)) {
+    if (isNaN(d1, d2) || d1 <= 0 || d2 <= 0 || isNaN(d1) || isNaN(d2)) {
       alert("Pleace give a valid number");
     } else {
       serial += 1;
@@ -113,13 +104,13 @@ document
       setValue("Rhombus", rhombusArea);
     }
   });
-
+//   Pentagon Aera code
 document.getElementById("pentagon-calculate").addEventListener("click", function () {
     const p = getInputValue("pentagon-p");
     const b = getInputValue("pentagon-b");
 
     // validation code
-    if (isNaN(b, h) || b <= 0 || h <= 0 || isNaN(b) || isNaN(h)) {
+    if (isNaN(p, b) || p <= 0 || b <= 0 || isNaN(p) || isNaN(b)) {
       alert("Pleace give a valid number");
     } else {
       serial += 1;
@@ -128,13 +119,13 @@ document.getElementById("pentagon-calculate").addEventListener("click", function
       setValue("Pentagon", pentagonArea);
     }
   });
-
+//   Ellipse Area
 document.getElementById("ellipse-area").addEventListener("click", function () {
   const a = getInputValue("ellipse-a");
   const b = getInputValue("ellipse-b");
 
   // validation code
-  if (isNaN(b, h) || b <= 0 || h <= 0 || isNaN(b) || isNaN(h)) {
+  if (isNaN(a, b) || a <= 0 || b <= 0 || isNaN(a) || isNaN(b)) {
     alert("Pleace give a valid number");
   } else {
     serial += 1;
