@@ -1,5 +1,5 @@
 let serial = 0;
-
+// get the value form the input field
 function getInputValue(elementId){
     const inputField = document.getElementById(elementId);
     const inputFieldValueString = inputField.value;
@@ -8,6 +8,7 @@ function getInputValue(elementId){
     return inputFieldValue;
 }
 
+// display the calculate value dynamicly
 function setValue(nameof, calSum, ) {
     const container = document.getElementById('table-container');
     const tr = document.createElement('tr');
@@ -21,26 +22,32 @@ function setValue(nameof, calSum, ) {
     </td>
     `;
     container.appendChild(tr);
-    // document.getElementById()
 }
+
+
 
 // Triangle Area code
 function triangleArea(b, h){
     const triangleArea = 0.5 * b * h;
-    console.log(triangleArea);
     return triangleArea;
 }
 document.getElementById("tri-calculate").addEventListener('click', function() {
-    
+
     // get the value
     const b = getInputValue('tri-base');
     const h = getInputValue('tri-height');
-    // get Triangle Area
-     const triSum = triangleArea(b, h);
-     serial +=1;
-    // set the value
-    setValue("Triangle", triSum);
-
+    
+    // validation code
+    if(isNaN(b, h) || b <= 0 || h <= 0 || isNaN(b) || isNaN(h)){
+        alert('Pleace give a valid number');
+    }else{
+             // get Triangle Area
+            const triSum = triangleArea(b, h);
+            // set the value
+            serial +=1;
+            setValue("Triangle", triSum);
+    }
+    
 })
 
 // Rectangle Area code
@@ -51,13 +58,18 @@ function rectangleArea(w, l) {
 }
 
 document.getElementById('rectangle-calculate').addEventListener('click', function(){
-    serial +=1;
     const w = getInputValue('rectangle-width');
     const l = getInputValue('rectangle-length');
 
-    const recSum = rectangleArea(w, l);
+    // validation code
+    if(isNaN(w, l) || w <= 0 || l <= 0 || isNaN(w) || isNaN(l)){
+        alert('Pleace give a valid number');
+    }else{
+        const recSum = rectangleArea(w, l);
+        serial +=1;
     // set the value
     setValue("Rectangle", recSum);
+    }
 })
 
 
@@ -69,14 +81,18 @@ function parallelogramArea(b, h) {
 }
 
 document.getElementById("parallelogram-calculate").addEventListener('click', function() {
-    serial +=1;
     const b = getInputValue('paran-base');
     const h = getInputValue('paran-height');
-    
-    const paraSum = parallelogramArea(b, h)
 
-    // set the value
-    setValue("Parallelogram", paraSum);
+    // validation code
+    if(isNaN(b, h) || b <= 0 || h <= 0 || isNaN(b) || isNaN(h)){
+        alert('Pleace give a valid number');
+    }else{
+        serial +=1;
+        const paraSum = parallelogramArea(b, h)
+        // set the value
+        setValue("Parallelogram", paraSum);
+    }
 })
 
 
