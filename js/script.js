@@ -149,3 +149,13 @@ document.getElementById("blog-page").addEventListener("click", function(){
     console.log("he");
     window.location.href = 'blog.html';
 })
+
+let div = document.querySelector("#card-body");
+  
+        div.addEventListener(
+            "mousemove", function (e) {
+                x = e.offsetX;
+                y = e.offsetY;
+                div.style.backgroundColor
+                    = `rgb(${x}, ${y}, ${x - y})`;
+            });
