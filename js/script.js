@@ -114,9 +114,7 @@ document
     }
   });
 
-document
-  .getElementById("pentagon-calculate")
-  .addEventListener("click", function () {
+document.getElementById("pentagon-calculate").addEventListener("click", function () {
     const p = getInputValue("pentagon-p");
     const b = getInputValue("pentagon-b");
 
@@ -145,3 +143,9 @@ document.getElementById("ellipse-area").addEventListener("click", function () {
     setValue("Ellipse", ellipseArea);
   }
 });
+
+// blog page code
+document.getElementById("blog-page").addEventListener("click", function(){
+    console.log("he");
+    window.location.href = 'blog.html';
+})

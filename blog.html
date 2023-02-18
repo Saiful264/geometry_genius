@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/166dbf15dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="container nav-part rounded px-5">
+            <div>
+              <a class="navbar-brand nav-title">Interactive</a>
+            <p class="nav-text">Geometry Genius</p>
+            </div>
+            <div class="d-flex">
+              <button id="to-home" class="btn btn-primary">Back To Home</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item rounded-2">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                  aria-expanded="true" aria-controls="collapseOne">
+                                  ১) What is DOM and what is the purpose of DOM?
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body rounded-2">
+                                    The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The purpose is we can use to manipulate the HTML, style, and inner document of a web page. Uses the DOM to access the document and its elements. DOM is not a programming language but without it java script language don’t have those modern feature like the notion of the web page, HTML documents etc.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mt-5">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button rounded-2 collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  ২) How will you select HTML elements using DOM? Name the DOM methods?
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body rounded-2">
+                                    There are 5 ways in which you can select elements in a DOM using selectors.
+                                    <ul>
+                                        <li>getElementsByTagName()</li>
+                                        <li>getElementsByClassName()</li>
+                                        <li>getElementById()</li>
+                                        <li>querySelector()</li>
+                                        <li>querySelectorAll()</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mt-5">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button rounded-2 collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  ৩) What is event bubble?
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body rounded-2">
+                                 Event bubbling is a method of event propagation in the HTML DOM API when an event is in an element inside another element, and both elements have registered a handle to that event. THere is two type Event bubbling one is Event Bubbling and other Preventing event bubbling.when event bubbing haping we can stopPropagation() to uses stop the bubbing and stopImmediatePropagation() This method will not only stop the further propagation but also stops any other handler of the target event from executing.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mt-5">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button rounded-2 collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFore" aria-expanded="false" aria-controls="collapseThree">
+                                  ৪) What is a callback function and why will you use it?
+                                </button>
+                              </h2>
+                              <div id="collapseFore" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body rounded-2">
+                                 <p>When a function call himself by his own then it's a call back function. It also know as recursion function. when it call himself t complete one iteration. We can use it lotof time. we can loop a array and object.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("to-home").addEventListener('click', function(){
+            window.location.href = 'index.html';
+        })
+    </script>
+</body>
+</html>
